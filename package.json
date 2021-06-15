@@ -4,10 +4,9 @@
   "description": "With Jekyll and Github Pages",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "bundle exec jekyll build",
-    "serve": "bundle exec jekyll serve",
-    "dev": "bundle exec jekyll serve --livereload",
-    "algolia": "bundle exec jekyll algolia",
+    "build": "bundle exec jekyll build --config _config.yml,_config_algolia.yml",
+    "serve": "bundle exec jekyll serve --livereload --config _config.yml,_config_algolia.yml",
+    "algolia": "bundle exec jekyll algolia --config _config.yml,_config_algolia.yml",
     "css:build": "gulp build",
     "test": "gulp amp_validator",
     "watch": "gulp watch",
